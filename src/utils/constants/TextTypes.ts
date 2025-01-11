@@ -1,4 +1,4 @@
-export const TextTypes ={
+export const TextTypes = {
     //-- Default text type
     default: 'default',
 
