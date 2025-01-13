@@ -3,6 +3,7 @@
  */
 
 export const Logos = {
-    //-- Main logo path
-    mainLogo: require('../../../assets/logos/main-logo.png'),
+    //-- Main logo paths
+    mainLogoLight: require('../../../assets/logos/main-logo-light.png'),
+    mainLogoDark: require('../../../assets/logos/main-logo-dark.png'),
 };

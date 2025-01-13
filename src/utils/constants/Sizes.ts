@@ -22,10 +22,10 @@ export const Sizes = {
     iconLg: 40.0,
 
     //-- Logo sizes
-    logoXs: 10.0,
-    logoSm: 20.0,
-    logoMd: 30.0,
-    logoLg: 40.0,
+    logoXs: 30.0,
+    logoSm: 40.0,
+    logoMd: 50.0,
+    logoLg: 60.0,
 
     //-- Border sizes
     borderRadiusSm: 4.0,

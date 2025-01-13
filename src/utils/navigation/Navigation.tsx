@@ -1,7 +1,7 @@
 import {NavigationContainer} from "@react-navigation/native";
 import {Routes} from "../routes/Routes";
 import {createStackNavigator} from "@react-navigation/stack";
-import HomeScreen from "../../screens/HomeScreen/HomeScreen";
+import HomeScreen from "../../features/personalization/screens/HomeScreen/HomeScreen";
 
 const Stack = createStackNavigator();
 

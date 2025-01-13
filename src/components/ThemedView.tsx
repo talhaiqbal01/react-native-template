@@ -11,6 +11,6 @@ export function ThemedView({style, lightColor, darkColor, ...otherProps}: Themed
 
     return <View style={[{
         backgroundColor,
-        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     }, style]} {...otherProps} />;
 }

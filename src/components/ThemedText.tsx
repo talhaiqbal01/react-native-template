@@ -1,4 +1,4 @@
-import { Text, type TextProps } from 'react-native';
+import {Text, type TextProps} from 'react-native';
 import {useThemeColor} from "../utils/hooks/useThemeColor";
 import {TextTypes} from "../utils/constants/TextTypes";
 import {TextStyle} from "../styles/TextStyle";
@@ -6,7 +6,7 @@ import {TextStyle} from "../styles/TextStyle";
 export type ThemedTextProps = TextProps & {
     lightColor?: string;
     darkColor?: string;
-    type?: any;
+    type?: string;
 };
 
 export function ThemedText({
@@ -16,12 +16,12 @@ export function ThemedText({
                                type = TextTypes.default,
                                ...rest
                            }: ThemedTextProps) {
-    const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
+    const color = useThemeColor({light: lightColor, dark: darkColor}, 'text');
 
     return (
         <Text
             style={[
-                { color },
+                {color},
                 type === TextTypes.default ? TextStyle.bodyLarge : undefined,
                 type === TextTypes.labelSmall ? TextStyle.labelSmall : undefined,
                 type === TextTypes.labelMedium ? TextStyle.labelMedium : undefined,
